@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment with paypal</title>
+</head>
+<body>
+  {% if messages %}
+    <ul class='messages'>
+      {% for messages in messages %}
+       <li>{{messages}}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  {{ form.render }}
+</body>
+</html>
